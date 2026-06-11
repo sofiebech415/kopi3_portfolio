@@ -148,11 +148,13 @@
 .nummer {
   font-size: 1.5rem;
   font-weight: lighter;
+  color: #842727;
 }
 
 .tekst {
   font-size: 1rem;
   padding-left: 1rem;
+  color: #842727;
 }
 
 .laes_mere h1 {
@@ -167,6 +169,7 @@
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  color: #842727;
 }
 
 .laes_mere_a:hover {
