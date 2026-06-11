@@ -42,9 +42,7 @@
 @media (min-width: 1350px) {
   .hero_text h1 {
     font-size: 119px;
-    margin-top: -5rem;
     line-height: 3rem;
-    margin-top: -10rem;
   }
 
   .hero_text h2 {
