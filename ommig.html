@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" />
+
+    <script src="js/kontakt.js" defer></script>
+    <script src="js/burgermenu.js" defer></script>
+    <script src="js/animation.js" defer></script>
+
+    <title>Om mig</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <img src="imgs/logo.svg" alt="mit logo" class="logo" />
+      </a>
+
+      <!-- span er i stedet for at skrive streger som en burger -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">(1) FORSIDE</a>
+        <a href="projekter.html">(2) PROJEKTER</a>
+        <a href="ommig.html">(3) OM MIG</a>
+      </nav>
+
+      <!-- menu til desktop -->
+      <nav class="desktop_nav">
+        <a href="index.html">Forside</a>
+        <a href="projekter.html">Mine projekter</a>
+        <a href="ommig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- OM MIG -->
+      <section class="om_mig">
+        <div class="om_mig_text">
+          <div>
+            <h1>Om mig</h1>
+            <h2>Hej, mit navn er Sofie!</h2>
+            <p>
+              Jeg er 23 år gammel, og har de sidste to år boet i min lille lejlighed i Valby. Efter knap fire sabbatår med arbejde og en masse skønne rejser, startede jeg i januar måned på mit første semester af Multimediedesign på EK. Inden jeg
+              startede studie gik jeg et halvt år på højskole, hvor jeg havde hovedfaget Design & Maker. Jeg har altid elsket at være kreativ, så det var en linje lige for mig!
+              <br />
+              <br />
+            </p>
+
+            <p><strong>Min uddannelse:</strong></p>
+            <ul>
+              <li>HHX fra Niels Brock Innovationsgymnasiet <em>(2019 - 2022)</em></li>
+              <li>Design og Maker på Vallekilde Højskole <br /><em>(aug. 2025 - dec. 2025)</em></li>
+              <li>Multimediedesign <em>(jan. 2026 - dec. 2027)</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="om_mig_img">
+          <img src="imgs/portræt.webp" alt="portraetbillede_af_mig" />
+        </div>
+      </section>
+
+      <div class="erhverv_semester_wrapper">
+        <!-- ERHVERVSERFARING -->
+        <section class="erhverv">
+          <div class="erhverv_h1">
+            <h1>Erhvervserfaring</h1>
+          </div>
+
+          <div class="erhverv_text">
+            <p><strong>Scroll dig igennem min erfaring!</strong></p>
+          </div>
+
+          <div>
+            <!-- readonly gør at brugeren ikke kan skrive i feltet, men stadig scrolle i det  -->
+            <textarea class="erhverv_textarea" readonly>
+ 
+Barista hos Grannys House - kompetencer:
+-> Kundeservice
+-> Kassebetjening 
+-> Multitasking 
+-> Struktur og overblik 
+
+Pædagogmedhjælper - kompetencer: 
+-> Tålmodighed og rummelighed 
+-> Ansvar og selvstændighed 
+-> Samarbejde
+-> Fleksibilitet og omstillingsevne 
+          </textarea
+            >
+          </div>
+        </section>
+
+        <!-- 1. SEMESTER -->
+        <section class="foerste_semester">
+          <div class="foerste_semester_h1">
+            <h1>Hvad har jeg fået ud af mit første semester?</h1>
+          </div>
+
+          <div class="foerste_semester_p">
+            <p>
+              Først og fremmest har jeg fået en grundlæggende forståelse for hvad uddannelsen indeholder, og hvad den kan bruges til fremadrettet. <br /><br />Jeg har fået en grundlæggende forståelse for kodning herunder HTML, CSS og JavaScript. Jeg
+              har lært at afkode en lang række kodestykker samt selv at strukturere dem. Jeg har lært at lave responsive sites, så løsningerne fungererer på flere formater. I forlængelse heraf har jeg fået kendskab til programmerne GitHub og VS code.
+              <br /><br />
+              Jeg har fået en grundlæggende forståelse for designprincipper herunder Gestalt-lovene, visuelt hieraki, visuelt flow og farveteori samt en overordnet forståelse for grafisk kommunikation vha. CRAP og AIDA-modellen.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- KONTAKT MIG -->
+      <section class="kontakt">
+        <div class="kontakt_text">
+          <h1>Kontakt mig</h1>
+          <h2>Har du spørgsmål til Multimediedesign eller 1. semester?</h2>
+        </div>
+
+        <div class="forms">
+          <form id="kontaktform">
+            <label for="besked"></label>
+
+            <textarea id="besked" name="besked" rows="5" placeholder="Skriv en besked eller et spørgsmål her..."></textarea>
+
+            <button type="submit">Indsend</button>
+          </form>
+
+          <p id="takbesked"></p>
+        </div>
+
+        <div id="overlay" class="overlay hidden">
+          <div class="popup">
+            <p>Tak for din henvendelse!</p>
+            <button id="lukPopup">OK</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="navn_footer">&copy;Sofie Bech Øer</p>
+      <p class="år">2026</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,954 @@
+/* FORSIDE */
+/* HERO */
+
+.hero_img img {
+  width: 100vw;
+  height: 100vw;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* object-fit: cover sørger for, at billedet fylder hele området uden at blive strukket */
+
+.hero {
+  position: relative;
+}
+
+.hero_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1rem;
+}
+
+.hero_text h1 {
+  font-size: 30px;
+}
+
+.hero_text h2 {
+  font-size: 40px;
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 1350px) {
+  .hero_text h1 {
+    font-size: 58px;
+  }
+}
+
+/* TIL DESKTOP */
+@media (min-width: 1350px) {
+  .hero_text h1 {
+    font-size: 120px;
+    margin-top: -5rem;
+    line-height: 3rem;
+    margin-top: -10rem;
+  }
+
+  .hero_text h2 {
+    font-size: 100px;
+  }
+
+  .hero_img img {
+    object-position: center bottom;
+    width: 100%;
+    height: 878px;
+  }
+}
+
+/* INTRO */
+
+.forside_intro_text h1 {
+  line-height: 1rem;
+}
+
+.forside_intro_text {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 15px;
+}
+
+.intro_img img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  max-width: 100%;
+  object-position: top;
+}
+
+.forside_intro {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* til tablet */
+@media (min-width: 768px) and (max-width: 1349px) {
+  .forside_intro_text h1 {
+    font-size: 40px;
+  }
+
+  .intro_img img {
+    height: 850px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1350px) {
+  .forside_intro_text h1 {
+    font-size: 80px;
+  }
+
+  .forside_intro_text h2 {
+    font-size: 30px;
+  }
+
+  .forside_intro_text p {
+    font-size: 16px;
+  }
+
+  .forside_intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .forside_intro_text {
+    margin: 0;
+    margin-top: -10rem;
+    margin-left: 5rem;
+  }
+
+  .intro_img {
+    justify-self: center;
+    overflow: hidden;
+  }
+
+  .intro_img img {
+    width: 100%;
+    height: 650px;
+    transform: rotate(5deg);
+  }
+}
+
+/* LÆS MERE */
+
+.nummer {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.tekst {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.laes_mere h1 {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid black;
+}
+
+.laes_mere_a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.laes_mere_a:hover {
+  transition: transform 0.2s ease;
+  display: inline-block;
+  transform: scale(1.03);
+}
+
+.laes_mere_title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: "Paragraffer", sans-serif;
+
+  text-decoration: underline;
+  padding-bottom: 0.2rem;
+
+  margin: 2rem;
+  margin-bottom: -1.5rem;
+}
+
+.laes_mere_a img {
+  max-width: 100%;
+  width: 100vw;
+  margin-bottom: 5rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .laes_mere h1 {
+    font-size: 70px;
+    grid-column: 1 / -1;
+    margin-top: -2rem;
+  }
+
+  .nummer {
+    font-size: 60px;
+    margin-left: 9rem;
+  }
+
+  .tekst {
+    font-size: 20px;
+  }
+
+  .laes_mere {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+  }
+
+  .laes_mere_a img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .laes_mere_title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* OM MIG */
+.erhverv_semester_wrapper {
+  background-color: #fcf6ef;
+  padding-top: 2rem;
+}
+
+.om_mig h1 {
+  line-height: 1rem;
+}
+
+.om_mig_text {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 15px;
+}
+
+.om_mig_text li {
+  font-family: "Paragraffer", sans-serif;
+  line-height: 2rem;
+  font-size: 15px;
+}
+
+.om_mig_img img {
+  width: 100vw;
+  height: 100vw;
+  object-fit: cover;
+  transform: rotate(5deg);
+  margin-bottom: 8rem;
+  max-width: 100%;
+}
+
+/* TIL DESKTOP */
+@media (min-width: 1350px) {
+  .om_mig {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* to lige store kolonner*/
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: -7rem;
+  }
+
+  .om_mig_text {
+    margin: 0;
+    margin-top: -10rem;
+    margin-left: 5rem;
+  }
+
+  .om_mig_text h1 {
+    font-size: clamp(32px, 6vw, 80px); /* flydende størrelse*/
+    line-height: 0.2rem;
+  }
+
+  .om_mig_text h2 {
+    font-size: 50px;
+  }
+
+  .om_mig_text p {
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+  .om_mig_img {
+    justify-self: center;
+    overflow: hidden;
+  }
+
+  .om_mig_img img {
+    width: 80%;
+    height: auto;
+    transform: rotate(5deg);
+  }
+}
+
+/* til tablet */
+@media (min-width: 768px) and (max-width: 1349px) {
+  .om_mig_img img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .om_mig_text p {
+    font-size: 12px;
+  }
+
+  .kontakt_text h1 {
+    font-size: 48px;
+    margin-left: 0;
+  }
+}
+
+/* ERHVERVSERFARING */
+
+.erhverv {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  font-size: 12.5px;
+}
+
+.erhverv h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #cbc5af;
+  padding: 1rem 0;
+  padding-left: 2rem;
+}
+
+.erhverv_text {
+  font-family: "Paragraffer", sans-serif;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  margin-left: 2rem;
+  font-size: larger;
+}
+
+.erhverv_textarea {
+  width: 70%;
+  max-width: 430px;
+  padding-left: 2rem;
+  margin-top: 2rem;
+
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  font-family: "Paragraffer", sans-serif;
+  line-height: 1.5rem;
+  resize: none; /* fjerner håndtaget til at vælge str. på tekstfeltet */
+  overflow-y: auto; /* gør feltet scrollbart */
+}
+
+/* HVAD JEG HAR FÅET UD AF FØRSTE SEMESTER  */
+
+.foerste_semester {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 12.5px;
+}
+
+.foerste_semester_h1 {
+  background-color: #cbc5af;
+  padding: 1rem 0;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  text-align: center;
+}
+
+.foerste_semester_h1 h1 {
+  margin: 0;
+}
+
+/* erhvervserfaring og 1. semester DESKTOP */
+@media (min-width: 768px) {
+  .erhverv_semester_wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+
+    align-items: center;
+  }
+
+  .erhverv {
+    width: 100%; /* erstatter 100vw */
+    margin-left: 0;
+  }
+
+  .erhverv_h1 {
+    font-size: 20px;
+    margin: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .erhverv_text {
+    font-size: 16px;
+    margin-left: 4rem;
+  }
+
+  .erhverv_textarea {
+    width: 86%; /*fylder sin kolonne */
+    max-width: none; /* fjerner mobilbegrænsningen */
+    font-size: 16px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .foerste_semester {
+    margin: 2rem;
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .foerste_semester_h1 {
+    width: 100%;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+    text-align: start;
+    font-size: 20px;
+    padding: 1rem 2rem;
+  }
+
+  .foerste_semester_p {
+    font-size: 16px;
+    margin-left: -2rem;
+  }
+}
+
+/* til tablet */
+@media (min-width: 768px) and (max-width: 1349px) {
+  .erhverv_semester_wrapper {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .erhverv_textarea {
+    width: 70%;
+  }
+}
+
+/* KONTAKT MIG */
+.kontakt h1 {
+  line-height: 1rem;
+}
+
+.kontakt_text {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "Paragraffer", sans-serif;
+}
+
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #f7edd8;
+  color: black;
+  margin: 2rem;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  transition: transform 0.2s ease;
+  display: inline-block;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+textarea {
+  margin: 1rem;
+  margin-top: -3rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+textarea:hover {
+  cursor: default;
+}
+
+#besked {
+  width: 85%;
+  max-width: 430px;
+  padding: 2rem;
+  font-size: 15px;
+  font-family: "Paragraffer", sans-serif;
+  resize: none; /*forhindrer brugeren i at ændre størrelsen  */
+  box-sizing: border-box;
+}
+
+#besked::placeholder {
+  color: #888;
+}
+
+/* POPUP */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.4); /* mørk baggrund */
+  backdrop-filter: blur(6px); /* BLUR EFFEKT */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000; /* sørger for den ligger ovenpå alt */
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 250px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* skjuler popup som standard */
+.hidden {
+  display: none;
+}
+
+/* kontakt mig DESKTOP */
+@media (min-width: 768px) {
+  .kontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  .kontakt_text {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 16px;
+  }
+
+  .kontakt_text h1 {
+    font-size: 80px;
+    margin-left: -15rem;
+    margin-top: 7rem;
+  }
+
+  .kontakt_text h2 {
+    font-size: 30px;
+  }
+
+  .forms {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  #besked {
+    width: 140%;
+    max-width: none; /* fjerner mobilbegrænsningen på 430px*/
+  }
+
+  textarea {
+    margin-top: 0;
+    height: 250px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-left: 0;
+  }
+}
+
+/* PROJEKTER */
+/* HERO */
+.intro_projekter {
+  position: relative;
+}
+
+.intro_p_img img {
+  width: 100vw;
+  height: 100vw;
+  object-fit: cover;
+  display: block;
+  margin-bottom: -7rem;
+}
+
+.intro_p_img {
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.intro_p_text h1 {
+  line-height: 1rem;
+  text-align: center;
+}
+
+.intro_p_text h2 {
+  font-size: 21px;
+  text-align: center;
+}
+
+.intro_p_text {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 12px;
+
+  position: absolute;
+  top: 33%;
+  left: 1%;
+  right: 1%;
+  transform: translateY(-50%);
+}
+
+.intro_projekter a {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+.knapper {
+  margin-left: 2rem;
+}
+
+.knapper a {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.knapper a:hover {
+  transition: transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* TIL DESKTOP */
+@media (min-width: 768px) {
+  .intro_p_text h1 {
+    font-size: 80px;
+    margin-top: 20rem;
+  }
+
+  .intro_p_text h2 {
+    font-size: 30px;
+  }
+
+  .intro_p_text {
+    font-size: 16px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+  }
+
+  .intro_p_img img {
+    width: 100%;
+    height: 850px;
+    margin-top: -3rem;
+    object-fit: cover; /* gør at billedet stadig fylder hele bredden og ikke bliver strakt */
+    object-position: top; /* cropper i bunden, beholder toppen*/
+  }
+
+  .intro_p_img {
+    margin-top: 5.5rem;
+  }
+
+  .knapper {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem 20rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -20rem;
+    font-size: 16px;
+  }
+
+  .intro_projekter a {
+    padding: 1rem 2rem;
+    border: 2px solid black;
+  }
+}
+
+/* tablet version */
+@media (min-width: 768px) and (max-width: 1334px) {
+  .intro_p_text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 14px;
+  }
+
+  .intro_p_text h1 {
+    font-size: clamp(32px, 6vw, 80px);
+    margin-top: 5rem;
+  }
+
+  .intro_p_text h2 {
+    font-size: clamp(18px, 3vw, 30px);
+  }
+
+  .knapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin-top: -5rem;
+  }
+}
+
+/* PROJEKTER */
+
+.mobilogweb_text,
+.emnesite_text,
+.emergency_text,
+.virksomhed_text {
+  margin: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 12px;
+}
+
+.mobilogweb_text h1,
+.emnesite_text h1,
+.emergency_text h1,
+.virksomhed_text h1 {
+  line-height: 1rem;
+  margin-top: 7rem;
+  border-top: 2px solid black;
+  padding-top: 3rem;
+}
+
+.mobilogweb_text h3,
+.emnesite_text h3,
+.emergency_text h3,
+.virksomhed_text h3 {
+  font-family: "Paragraffer", sans-serif;
+  margin-bottom: -0.5rem;
+  margin-top: 2rem;
+}
+
+.mobilogweb_text a,
+.emnesite_text a,
+.emergency_text a,
+.virksomhed_text a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f5edd7;
+  color: black;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mobilogweb_text a:hover,
+.emnesite_text a:hover,
+.emergency_text a:hover,
+.virksomhed_text a:hover {
+  transition: transform 0.2s ease;
+  display: inline-block;
+  transform: scale(1.1);
+  text-decoration: solid;
+}
+
+/* til tablet */
+@media (min-width: 768px) and (max-width: 1350px) {
+  .mobilogweb_text h1,
+  .emnesite_text h1,
+  .emergency_text h1,
+  .virksomhed_text h1 {
+    font-size: 40px;
+  }
+}
+
+/* mockups */
+
+.doku {
+  position: relative;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.computer-frame {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.mockup_video {
+  position: absolute;
+
+  /* hvor videoen ligger ift. billedet */
+  top: 5%;
+  left: 12%;
+
+  width: 76%;
+  height: 80%;
+
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* proces */
+
+.doku_proces img {
+  width: 100%;
+  max-width: 430px;
+  margin-bottom: 2rem;
+}
+
+.doku_proces {
+  display: none;
+}
+
+/* TIL DESKTOP */
+@media (min-width: 1350px) {
+  #mobilogweb,
+  #emnesite,
+  #emergency,
+  #virksomhed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: start;
+    align-items: center;
+  }
+
+  .doku {
+    display: grid;
+    top: 2rem;
+  }
+
+  .mobilogweb_text,
+  .emnesite_text,
+  .emergency_text,
+  .virksomhed_text {
+    margin: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 16px;
+  }
+
+  .mobilogweb_text h1,
+  .emnesite_text h1,
+  .emergency_text h1,
+  .virksomhed_text h1 {
+    font-size: 80px;
+    margin-top: -10rem;
+  }
+
+  .mobilogweb_text h1 {
+    margin-top: 3rem;
+  }
+
+  .mobilogweb_text h2,
+  .emnesite_text h2,
+  .emergency_text h2,
+  .virksomhed_text h2 {
+    font-size: 30px;
+  }
+
+  .mobilogweb_text a,
+  .emnesite_text a,
+  .emergency_text a,
+  .virksomhed_text a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f5edd7;
+    color: black;
+    text-decoration: underline;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    margin-top: 1.5rem;
+    font-size: 16px;
+  }
+
+  #emnesite,
+  #emergency,
+  #virksomhed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: start;
+  }
+
+  /* Skjul doku_proces inde i teksten på desktop */
+  .emnesite_text .doku_proces,
+  .emergency_text .doku_proces,
+  .virksomhed_text .doku_proces {
+    display: none;
+  }
+
+  /* Vis doku_proces i højre kolonne på desktop */
+  .doku_højre .doku_proces {
+    display: block;
+  }
+
+  /* Skjul hele højre kolonne på mobil */
+  .doku_højre {
+    display: none;
+  }
+
+  .doku_højre {
+    display: block;
+  }
+
+  .doku_proces {
+    margin-left: 10rem;
+    margin-top: 6rem;
+  }
+}

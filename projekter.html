@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" />
+
+    <script src="js/burgermenu.js" defer></script>
+    <script src="js/animation.js" defer></script>
+
+    <title>Projekter</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <img src="imgs/logo.svg" alt="mit logo" class="logo" />
+      </a>
+
+      <!-- span er i stedet for at skrive streger som en burger -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">(1) FORSIDE</a>
+        <a href="projekter.html">(2) PROJEKTER</a>
+        <a href="ommig.html">(3) OM MIG</a>
+      </nav>
+
+      <!-- menu til desktop -->
+      <nav class="desktop_nav">
+        <a href="index.html">Forside</a>
+        <a href="projekter.html">Mine projekter</a>
+        <a href="ommig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- INTRODUKTION -->
+      <section class="intro_projekter">
+        <div class="intro_p_img">
+          <img src="imgs/papir.webp" alt="papir med introduktion til projekter" />
+        </div>
+
+        <div class="intro_p_text">
+          <h1>Mine projekter</h1>
+          <h2>Få et overblik over mine projekter fra 1. semester</h2>
+
+          <p>
+            På første semester har vi beskæftiget os med 6 forskellige temaer, der bredt har taget os igennem en grundlæggende forståelse og læring af grundlæggende web, UX/UI, brugergrænsefladeudvikling, grundlæggende indhold samt denne portfolio
+            som eksamensopgave. <br /><br />Jeg har valgt at tage udgangspunkt i de projekter vi har lavet gennem alle 6 temaer. <br />Bliv klogere på hvert projekt her:
+          </p>
+        </div>
+
+        <!-- KNAPPER -->
+        <div class="knapper">
+          <a href="#mobilogweb">Mobil- og website</a>
+          <a href="#emnesite">Emnesite</a>
+          <a href="#emergency">Emergencysite</a>
+          <a href="#virksomhed">Virksomhedssite</a>
+        </div>
+      </section>
+
+      <!-- MOBIL- OG WEBSITE -->
+      <section id="mobilogweb">
+        <div class="mobilogweb_text">
+          <h1>Mobil- og website</h1>
+          <h2>Tema 2 - Grundlæggende web</h2>
+
+          <h3><strong>Løsning:</strong></h3>
+          <p>
+            I dette projekt udviklede jeg et website efter mobile-first princippet og videreudviklede det herefter til at være responsivt på desktop også. Websitet består af fem html-sider:
+            <em>Forside, Min computer, Operativsystemer, Komponenter og Galleri.</em>
+          </p>
+
+          <h3><strong>Proces:</strong></h3>
+          <p>
+            Jeg startede med at danne mig et overblik over det udleverede materiale, som i dette tilfælde omfattede wireframes, layoutdiagrammer, tekst, billeder og krav til b.la typografi og farver. Herefter oprettede jeg grundstrukturen på alle fem
+            HTML-sider med de nødvendige semantiske elementer såsom header, main og footer, og indsatte indhold samt navigation. <br /><br />Med udgangspunkt i mobilversionen tilpassede jeg derefter layoutet til desktop ved hjælp af Grid, Flexbox og
+            Media Queries. Herefter opdelte jeg CSS i en generel.css og en layout.css for bedre overblik. Her fik jeg tilføjet struktur og styling. <br /><br />Til sidst blev både HTML og CSS valideret og eventuelle fejl blev rettet. Afslutningsvis
+            blev siden uploaded til GitHub.
+          </p>
+
+          <h3><strong>Læring:</strong></h3>
+          <p>
+            Projektet gav mig en grundlæggende forståelse for HTML og CSS samt erfaring med Grid, Flexbox og responsivt design. Jeg lærte at arbejde med designprincipper i praksis og hvordan man komprimerer billeder til et format med mindre
+            filstørrelse såsom WebP, og vigtigheden af at gøre det. <br /><br />Jeg lærte også om mappestruktur, og vigtigheden i, at have styr på den. <br />Dette fremgår også af min feedback, da man ikke kunne se mine billeder, fordi de ikke lå i
+            en ‘imgs-mappe’ - men i roden af mit projekt. Det lærte jeg til næste projekt. <br /><br />Til sidst lærte jeg også betydningen af løbende validering af både HTML og CSS for at sikre et korrekt og velfungerede site.
+          </p>
+
+          <a href="https://sofiebech415.github.io/mobilsite/">Færdige site - mobil</a>
+          <a href="https://sofiebech415.github.io/Website2/">Færdige site - desktop</a>
+        </div>
+
+        <div class="doku">
+          <video class="mockup_video" autoplay muted loop>
+            <source src="imgs/website_vid.mp4" type="video/mp4" />
+          </video>
+
+          <img src="imgs/laptop_mockup.webp" alt="computer mockup" class="computer-frame" />
+        </div>
+      </section>
+
+      <!-- EMNESITE -->
+      <section id="emnesite">
+        <div class="emnesite_text">
+          <h1>Emnesite</h1>
+          <h2>Tema 3 - Grundlæggende UX / UI</h2>
+
+          <h3><strong>Løsning:</strong></h3>
+          <p>I dette projekt udviklede jeg et website på baggrund af et selvvalgt emne - som i mit tilfælde var kunstformen croquis.</p>
+
+          <h3><strong>Proces:</strong></h3>
+          <p>
+            I dette projekt var der fokus på brugeroplevelse (UX) og selve brugergrænsefladen (UI). <br /><br />Jeg startede med research og idéudvikling, hvor jeg undersøgte emnet, målgruppen og sitets formål ved at lave brainstorm over emner,
+            designbrief, definere brugertyper, lave brugermatrix samt userstories. Herefter gik jeg i gang med at definere sitets design og stil ved b.la at lave værdiord, moodboards, sketches og styletiles. <br /><br />Derefter udarbejdede jeg en
+            lofi-prototype og senere en klikbar hifi-prototype med udgangspunkt i mit valgte styletile. Jeg testede min hifi-prototype ved at lave en række tests bl.a. 5-sekunders, tænke højt, likert skala og lighthouse. På baggrund af
+            testresultaterne ændrede jeg nogle ting i designet. <br /><br />Gennem hele processen dokumenterede jeg arbejdsprocessen i Figma og FigJam.
+          </p>
+
+          <div class="doku_proces">
+            <img src="imgs/emnesite_doku.webp" alt="emnesite proces" />
+          </div>
+
+          <h3><strong>Læring:</strong></h3>
+          <p>
+            I dette projekt lærte jeg i sær at arbejde procesorienteret, og vigtigheden i at lave et grundigt forarbejde inden man begynder at kode den færdige løsning. <br />Jeg fik ikke grundigt fastlagt selve formålet med sitet, hvilket endte med
+            at spænde en anelse ben for mig i forhold til både layout, design og indhold. Den læring tog jeg med mig videre til de næste projekter. <br /><br />Jeg lærte også vigtigheden i at lave tests undervejs og dermed få andre input og øjne på
+            projektet. Denne del ville jeg gerne have haft mere fokus på, da specielt min forside var en anelse tvetydig i forhold til mit emne. Det var også en læring jeg tog med mig videre til de næste projekter.
+          </p>
+
+          <a href="https://sofiebech415.github.io/Emnesite/">Færdige site</a>
+        </div>
+
+        <div class="doku_højre">
+          <div class="doku">
+            <video class="mockup_video" autoplay muted loop>
+              <source src="imgs/emnesite_vid.mp4" type="video/mp4" />
+            </video>
+
+            <img src="imgs/laptop_mockup.webp" alt="computer mockup" class="computer-frame" />
+          </div>
+
+          <div class="doku_proces">
+            <img src="imgs/emnesite_doku.webp" alt="emnesite proces" />
+          </div>
+        </div>
+      </section>
+
+      <!-- EMERGENCYSITE -->
+      <section id="emergency">
+        <div class="emergency_text">
+          <h1>Emergencysite</h1>
+          <h2>Tema 4 - Grundlæggende brugergrænsefladeudvikling</h2>
+
+          <h3><strong>Løsning:</strong></h3>
+          <p>
+            I dette projekt udviklede jeg et interaktivt emergency-site ud fra en selvvalgt nødsituation - i mit tilfælde en SU-nødguide. Sitet blev udviklet på baggrund af det udleverede materiale, og indeholder en forside, en interaktiv infografik
+            og en webformular. Designet og funktionerne blev udviklet, så de understøtter temaet om en nødsituation.
+          </p>
+
+          <h3><strong>Proces:</strong></h3>
+          <p>
+            Jeg udarbejdede sitet gennem en række delopgaver fordelt over fire uger. <br /><br />Den første uge designede jeg en infografik med vektorgrafik i Illustrator og implementerede den derefter på mit site, hvor jeg gjorde den interaktiv vha.
+            JavaScript. <br />Den anden uge konstruerede og stylede jeg en webformular, der havde til formål at registrere en række brugerinput. I mit tilfælde lavede jeg en formular hvor brugeren kunne få overblik over sit rådighedsbeløb. <br />Den
+            tredje uge byggede og designede jeg forsiden. Her fik jeg kendskab til ‘popover’. I den fjerde og sidste uge fik jeg styr på de sidste tilretninger. <br /><br />Gennem hele projektet dokumenterede jeg løbende mit arbejde i Figma og
+            FigJam.
+          </p>
+
+          <div class="doku_proces">
+            <img src="imgs/emergency_doku.webp" alt="emergency proces" />
+          </div>
+
+          <h3><strong>Læring:</strong></h3>
+          <p>
+            Dette projekt var enormt lærerigt. Jeg fik et øget kendskab til Illustrator ved at lave logo-generering og vektorgrafik. Jeg lærte i forlængelse heraf hvordan man eksporterer en SVG-fil i Illustrator og implementerer den i sin kode med
+            JavaScript. Jeg lærte også at lave animationer i form af ‘popover’ og ‘accordion’. <br /><br />Derudover fik jeg også kendskab til at lave interaktive webformularer med Forms.
+          </p>
+
+          <a href="https://sofiebech415.github.io/Emergency-site/">Færdige site</a>
+        </div>
+
+        <div class="doku_højre">
+          <div class="doku">
+            <video class="mockup_video" autoplay muted loop>
+              <source src="imgs/emergency_vid.mp4" type="video/mp4" />
+            </video>
+
+            <img src="imgs/laptop_mockup.webp" alt="computer mockup" class="computer-frame" />
+          </div>
+          <div class="doku_proces">
+            <img src="imgs/emergency_doku.webp" alt="emergency proces" />
+          </div>
+        </div>
+      </section>
+
+      <!-- VIRKSOMHEDSSITE -->
+      <section id="virksomhed">
+        <div class="virksomhed_text">
+          <h1>Virksomhedssite</h1>
+          <h2>Tema 5 - Grundlæggende indhold</h2>
+
+          <h3><strong>Løsning:</strong></h3>
+          <p>
+            I dette gruppeprojekt udviklede vi et redesign af en selvvalgt virksomheds hjemmeside - vi valgte blomster- og interiørbutikken Cool & Cozy. Målet var at optimere brugeroplevelsen ved at have fokus på sammenhæng i vores
+            indholdsproduktion.
+            <br />
+            Projektet resulterede i et website bestående af fire sider: <em>forside, shop, om os og kontakt.</em>
+          </p>
+
+          <h3><strong>Proces:</strong></h3>
+          <p>
+            Vi startede med at danne os et overblik over virksomheden ved at lave research på deres koncept, sortiment, vision og målgruppe. Derefter lavede vi en heuristisk evaluering af deres eksisterende site, for at blive klogere på problemer i
+            brugeroplevelsen så vi bedst muligt kunne optimere brugervenligheden. <br />Herefter arbejdede vi med idéudvikling i form af moodboards og styletiles for at definere retningen for vores redesign. Så tog vi ud til virksomheden og
+            producerede vores eget indhold til sitet i form af billeder og videoer - her havde vi især fokus på at skabe en rød tråd i indholdets stil og æstetik. <br /><br />På baggrund af vores heuristiske evaluering, vores valgte designretning og
+            eget indhold udviklede vi en hifi-prototype. Den testede vi b.la vha. 5-sekunders test og en likert-skala. <br /><br />Herefter kodede vi sitet ved at samarbejde i GitHub. <br />Gennem hele projektet dokumenterede vi løbende arbejdet i
+            Figma og FigJam.
+          </p>
+
+          <div class="doku_proces">
+            <img src="imgs/virksomhed_doku.webp" alt="emergency proces" />
+          </div>
+
+          <h3><strong>Læring:</strong></h3>
+          <p>
+            I dette projekt fik jeg mere erfaring med procesarbejde og projektstyring - i en gruppekontekst. Jeg lærte at strukturere via SCRUM, vigtigheden i brugertests og især brugen af den heuristiske evaluering gav et godt indblik i hvilke
+            problematikker, der var tydelige i brugeroplevelsen. <br /><br />Da der var helt frie rammer til design lærte jeg også vigtigheden i designprincipper såsom gestaltlove, visuelt hieraki og visuelt flow. I produktionen af vores eget indhold
+            lærte jeg også om billedekompositioner og vigtigheden af dette. <br /><br />Derudover lærte jeg også hvordan man samarbejder i ét repository i GitHub og arbejdsgangen med: pull, commit, pull, push. <br /><br />Afslutningsvis lærte jeg en
+            ny præsentationsform: Pecha Kucha, hvor den automatisk skifter slide efter 20 sek. Det var lærerigt at prøve et nyt format.
+          </p>
+
+          <a href="https://yasminakhawaja.github.io/virksomhedssite/index.html">Færdige site</a>
+        </div>
+
+        <div class="doku_højre">
+          <div class="doku">
+            <video class="mockup_video" autoplay muted loop>
+              <source src="imgs/virksomhed_vid.mp4" type="video/mp4" />
+            </video>
+
+            <img src="imgs/laptop_mockup.webp" alt="computer mockup" class="computer-frame" />
+          </div>
+          <div class="doku_proces">
+            <img src="imgs/virksomhed_doku.webp" alt="emergency proces" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="navn_footer">&copy;Sofie Bech Øer</p>
+      <p class="år">2026</p>
+    </footer>
+  </body>
+</html>

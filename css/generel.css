@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Overskrift";
+  src: url(../fonte/InstrumentSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Underoverskrift";
+  src: url(../fonte/PinyonScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Paragraffer";
+  src: url(../fonte/inter.ttf);
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  display: block;
+  z-index: 1000;
+
+  top: 20px;
+  left: 20px;
+}
+
+.logo a {
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+/* BURGERMENU */
+/* Burger-knap */
+.burger {
+  position: fixed;
+  right: 40px;
+  top: 20px;
+  width: 30px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  padding: 0;
+  margin: 0;
+
+  z-index: 1001;
+}
+
+/* De tre streger */
+.burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #1d1d1d;
+
+  margin: 8px 0;
+
+  transition: 0.3s ease;
+}
+
+/* Når menuen er åben -> kryds */
+.burger.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Dropdown-menu */
+.mobile-menu {
+  position: fixed;
+  font-family: "Paragraffer", sans-serif;
+
+  margin: 0;
+
+  width: 80vw;
+  max-width: 500px;
+  min-height: 250px;
+
+  background: rgba(145, 145, 145, 0.2); /*sidste tal er opaciteten*/
+
+  backdrop-filter: blur(2.5px);
+
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(-20px);
+
+  transition: 0.3s ease;
+
+  z-index: 1000;
+}
+
+/* Åben menu */
+.mobile-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Links */
+.mobile-menu a {
+  text-decoration: none;
+
+  color: #8a2d2d;
+
+  font-size: 2.2rem;
+  font-weight: 300;
+
+  letter-spacing: 1px;
+
+  transition: 0.2s;
+}
+
+.mobile-menu a:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 769px) {
+  .burger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop_nav {
+    display: flex !important;
+    gap: 10rem;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .desktop_nav a {
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+    font-family: "Overskrift", serif;
+    font-size: 25px;
+
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+
+  .desktop_nav a:hover {
+    color: #842727;
+    transform: scale(1.1);
+  }
+
+  header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+  }
+}
+
+/* den sidste er en fallback font */
+h1 {
+  font-family: "Overskrift", serif;
+  color: #842727;
+}
+
+h1 span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+h1.synlig span {
+  animation: faldNed 1.5s ease forwards;
+}
+
+@keyframes faldNed {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-family: "Underoverskrift", cursive;
+  color: #842727;
+}
+
+/* til animation af h2 på forsiden */
+.animer span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.animer.synlig span {
+  animation: faldNed 1.5s ease forwards;
+}
+
+h3 {
+  font-family: "Paragraffer", sans-serif;
+  /* color: #842727; */
+  font-family: "Paragraffer", sans-serif;
+  margin-bottom: -0.5rem;
+  margin-top: 2rem;
+  font-size: 16px;
+}
+
+p {
+  font-family: "Paragraffer", sans-serif;
+  line-height: 1.7rem;
+}
+
+/* skjul desktop nav på mobil */
+.desktop_nav {
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefeb;
+}
+
+footer {
+  text-align: center;
+  border-top: 1.5px solid black;
+}
+
+.navn_footer {
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+}
+
+.år {
+  font-style: italic;
+  margin-bottom: 2rem;
+}

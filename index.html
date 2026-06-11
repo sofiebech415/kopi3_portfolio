@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" />
+
+    <script src="js/burgermenu.js" defer></script>
+    <script src="js/animation.js" defer></script>
+
+    <title>Forside</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <img src="imgs/logo.svg" alt="mit logo" class="logo" />
+      </a>
+
+      <!-- span er i stedet for at skrive streger som en burger -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">(1) FORSIDE</a>
+        <a href="projekter.html">(2) PROJEKTER</a>
+        <a href="ommig.html">(3) OM MIG</a>
+      </nav>
+
+      <!-- menu til desktop -->
+      <nav class="desktop_nav">
+        <a href="index.html">Forside</a>
+        <a href="projekter.html">Mine projekter</a>
+        <a href="ommig.html">Om mig</a>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero_img">
+          <img src="imgs/hero.webp" alt="herobillede" />
+        </div>
+
+        <div class="hero_text">
+          <h1>Velkommen til min</h1>
+          <h2 class="animer">portfolio</h2>
+        </div>
+      </section>
+
+      <!-- INTRODUKTION -->
+      <section class="forside_intro">
+        <div class="forside_intro_text">
+          <h1>Introduktion</h1>
+          <h2>Velkommen til min portfolio!</h2>
+          <p>
+            Her finder du en samling af mit arbejde fra 1. semester på Multimediedesign. Du kan både dykke ned i mine projekter, mine arbejdsprocesser og læse om mine refleksioner bag hvert projekt. Formålet er at give et indblik i hvilke projekter
+            man laver på 1. semester og hvilke metoder og værktøjer man bliver introduceret for. <br /><br />Derudover kan du også få et lille indblik i hvem jeg er - god fornøjelse!
+          </p>
+        </div>
+
+        <div class="intro_img">
+          <img src="imgs/intro_img.webp" alt="intro_billede_af_mig" />
+        </div>
+      </section>
+
+      <!-- LÆS MERE -->
+      <section class="laes_mere">
+        <h1>Læs mere:</h1>
+
+        <a href="projekter.html" class="laes_mere_a">
+          <h2 class="laes_mere_title">
+            <span class="nummer">01</span>
+            <span class="tekst">Projekter</span>
+          </h2>
+
+          <img src="imgs/01projekter.webp" alt="projekter_img" />
+        </a>
+
+        <a href="ommig.html" class="laes_mere_a">
+          <h3 class="laes_mere_title">
+            <span class="nummer">02</span>
+            <span class="tekst">Om mig</span>
+          </h3>
+
+          <img src="imgs/02ommig.webp" alt="ommig_img" />
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p class="navn_footer">&copy;Sofie Bech Øer</p>
+      <p class="år">2026</p>
+    </footer>
+  </body>
+</html>
