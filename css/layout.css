@@ -49,6 +49,10 @@
     font-size: 100px;
   }
 
+  .hero_text {
+    transform: translate(-50%, -60%);
+  }
+
   .hero_img img {
     object-position: center bottom;
     width: 100%;
