@@ -40,23 +40,36 @@
 
 /* TIL DESKTOP */
 @media (min-width: 1350px) {
-  .hero_text h1 {
+  /* .hero_text h1 {
     font-size: 119px;
     line-height: 3rem;
+    margin-top: -10rem;
   }
 
   .hero_text h2 {
     font-size: 100px;
   }
 
-  .hero_text {
-    transform: translate(-50%, -60%);
-  }
+  .hero_img img {
+    object-position: center bottom;
+    width: 100%;
+    height: 877px;
+  } */
 
   .hero_img img {
     object-position: center bottom;
     width: 100%;
     height: 877px;
+  }
+
+  .hero_text h1 {
+    font-size: 119px;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+  .hero_text h2 {
+    font-size: 100px;
   }
 }
 
